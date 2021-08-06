@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
-import SearchBooks from './pages/SearchBooks';
-import SavedBooks from './pages/SavedBooks';
-import Navbar from './components/Navbar';
+import SearchBooks from './pages/searchbooks';
+import SavedBooks from './pages/savedbooks';
+import Navbar from './components/navbar';
 import { setContext } from '@apollo/client/link/context';
 
 const authLink = setContext((_, { headers }) => {
